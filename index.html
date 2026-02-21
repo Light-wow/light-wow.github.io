@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專案入口門戶</title>
+    <!-- 使用 Tailwind CSS 進行簡潔排版 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- 頂部簡單標題 -->
+    <header class="py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <div class="w-20 h-20 bg-indigo-600 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white text-3xl shadow-lg">
+                <i class="fas fa-th-large"></i>
+            </div>
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">我的專案入口</h1>
+            <p class="text-gray-500">歡迎來到我的網站，點擊下方專案開始使用。</p>
+        </div>
+    </header>
+
+    <!-- 專案連結區塊 -->
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-8 w-full flex justify-center">
+        <div class="w-full max-w-md">
+            
+            <!-- 專案 1 -->
+            <a href="https://fire.okwiths.com/" target="_blank" class="project-card block p-8 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="text-indigo-600 text-3xl">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="text-gray-300">
+                        <i class="fas fa-external-link-alt text-sm"></i>
+                    </div>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">打火補假計數機</h2>
+                <p class="text-gray-500 text-base leading-relaxed">
+                    專為火更同事設計的補假計算工具，快速準確地計算出動打火後獲得的補假。
+                </p>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="py-12 text-center text-gray-400 text-sm mt-auto">
+        <div class="flex justify-center space-x-6 mb-4 text-xl">
+            <a href="#" class="hover:text-gray-600 transition"><i class="fab fa-github"></i></a>
+            <a href="#" class="hover:text-gray-600 transition"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 我的個人導航站. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
